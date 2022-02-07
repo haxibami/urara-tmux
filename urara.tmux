@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+_current_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-tmux source $current_dir/src/tmux.conf
+tmux source-file "$_current_dir/src/urara.conf"
